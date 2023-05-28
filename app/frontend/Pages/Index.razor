@@ -1,7 +1,13 @@
 ﻿@page "/"
 
 <PageTitle>Home</PageTitle>
-
+@code {
+    protected override void OnInitialized()
+    {
+        @inject NavigationManager navigation;
+        navigation.NavigateTo("/chat");
+    }
+}
 <MudCard Elevation="24">
     <MudCardHeader>
         <CardHeaderAvatar>

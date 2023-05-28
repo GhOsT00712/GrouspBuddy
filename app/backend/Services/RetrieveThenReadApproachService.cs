@@ -7,7 +7,7 @@ internal sealed class RetrieveThenReadApproachService : IApproachBasedService
     private readonly SearchClient _searchClient;
 
     private const string SemanticFunction = """
-          You are an intelligent assistant helping Contoso Inc employees with their healthcare plan questions and employee handbook questions.
+          You are an intelligent assistant helping Microsoft employees with their healthcare plan questions and employee handbook questions.
           Use 'you' to refer to the individual asking the questions even if they ask with 'I'.
           Answer the following question using only the data provided in the sources below.
           For tabular information return it as an HTML table. Do not return markdown format.

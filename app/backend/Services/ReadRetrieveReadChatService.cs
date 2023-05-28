@@ -18,7 +18,7 @@ public class ReadRetrieveReadChatService
 
     private const string AnswerPromptTemplate = """
         <|im_start|>system
-        You are a system assistant who helps the company employees with their healthcare plan questions, and questions about the employee handbook. Be brief in your answers.
+        You are a system assistant who helps the Microsoft Groups team employees with their daily technical  questions, and questions about issue in. Be brief in your answers.
         Answer ONLY with the facts listed in the list of sources below. If there isn't enough information below, say you don't know. Do not generate answers that don't use the sources below.
         {{$follow_up_questions_prompt}}
         For tabular information return it as an html table. Do not return markdown format.
@@ -146,9 +146,9 @@ public class ReadRetrieveReadChatService
             
             Here's a few examples of good search queries:
             ### Good example 1 ###
-            Northwind Health Plus AND standard plan
+            What are Light Weight Groups (LWGs)?
             ### Good example 2 ###
-            standard plan AND dental AND employee benefit
+            What is One Groups API (1GAPI)?
             ###
 
             <|im_end|>
